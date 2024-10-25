@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Hike Selection App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
 <body>
     <div class="container">
-        <div class="hike" id="winterthur-hike">
+        <div id="winterthur" class="hike">
             <h2 id="winterthur-title"></h2>
-            <p id="winterthur-description"></p>
             <img id="winterthur-image" src="" alt="Winterthur Hike">
-            <button onclick="chooseWinterthur()">Choose Me</button>
+            <p id="winterthur-description"></p>
+            <button id="winterthur-button">Choose Me</button>
         </div>
-
-        <div class="hike" id="zurich-hike">
+        <div id="zurich" class="hike">
             <h2 id="zurich-title"></h2>
-            <p id="zurich-description"></p>
             <img id="zurich-image" src="" alt="Zurich Hike">
-            <button onclick="chooseZurich()">Pick Me</button>
+            <p id="zurich-description"></p>
+            <button id="zurich-button">Pick Me</button>
+        </div>
+    </div>
+    <div id="winner-container" class="winner hidden">
+        <h2 id="winner-title"></h2> <!-- Optional: title for the winning hike -->
+        <div class="image-container">
+            <img id="winner-image" src="" alt="Winner Hike">
+            <div class="rainbow-message">schick mir en screenshot vom winner</div> <!-- Rainbow message -->
         </div>
     </div>
 
-    <div id="winner" class="hidden">
-        <div class="winner-text rainbow-text">schick mir en screenshot vom winner</div>
-        <h2 id="winner-title"></h2>
-        <p id="winner-description"></p>
-        <img id="winner-image" src="" alt="Winner Hike">
-    </div>
-
-    <script src="script.js"></script>
+    <script src="app.js"></script> <!-- Link to JavaScript file -->
 </body>
 </html>
